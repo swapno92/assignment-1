@@ -8,29 +8,33 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/3664601a01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="font-style">
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg  nav ">
         <div class="container-fluid">
             <div>
-                <img src="./cde17ceafdfd82e06f921a221a5179df-removebg-preview.png " class="nav-img" alt="">
+                <img src="./image/nav.png " class="nav-img" alt="">
                 <a class="navbar-brand text-light" href="#">BRIGHTON</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <div class="collapse navbar-collapse k mb-0 " id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
                 </ul>
-                <ul class="d-flex item">
+                <ul class="d-flex  item pt-2">
                     <li><a href="" class="active-link link-underline-warning text-white">HOME</a></li>
                     <li>ABOUT</li>
-                    <li>FEATURE</li>
-                    <li>CONTUCT US</li>
+                    <li>PROGRAMS</li>
+                    <li>CONTACT US</li>
                 </ul>
             </div>
         </div>
@@ -62,17 +66,32 @@
         </div>
     </section>
 
+
+    <!-- about us -->
+    <section class="about d-flex  mt-4">
+        <div class=" about-img">
+            <img src="./image/about-img.png" alt="">
+        </div>
+        <div class=" about-des">
+            <h2>A FEW WORDS ABOUT US</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat beatae eligendi id quas non
+            doloribus alias ea neque veritatis, delectus facere autem exercitationem, mollitia reiciendis pariatur
+            quaerat magnam cum?mollitia reiciendis pariatur quaerat magnam cum? <br>
+            <button class="bn">Read More</button>
+        </div>
+    </section>
+
     <!-- carousel -->
 
     <section class="carousel-section">
-        <h2 class="carousel-title">PARENT'S FEEDBACK</h2>
+        <h2 class="carousel-title mb-4">PARENT'S FEEDBACK</h2>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active gap-4">
                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
                     <img class="carousel-img" src="./image/client.png" alt="">
                     <h5 class="mt-1">HDHALI JONSON</h5>
-                    <h6>chaklds</h6>
+                    <h6>CUSTOMER</h6>
                     <p class="carousel-descriptioin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                         tenetur suscipit aut aperiam ipsam maiores nihil laudantium? Nam, reprehenderit quia delectus
                         dignissimos perspiciatis facere, accusantium tempore voluptas sit rem quo?</p>
@@ -82,7 +101,7 @@
                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
                     <img class="carousel-img" src="./image/client.png" alt="">
                     <h5 class="mt-1">HDHALI JONSON</h5>
-                    <h6>chaklds</h6>
+                    <h6>CUSTOMER</h6>
                     <p class="carousel-descriptioin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                         tenetur suscipit aut aperiam ipsam maiores nihil laudantium? Nam, reprehenderit quia delectus
                         dignissimos perspiciatis facere, accusantium tempore voluptas sit rem quo?</p>
@@ -92,7 +111,7 @@
                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
                     <img class="carousel-img" src="./image/client.png" alt="">
                     <h5 class="mt-1">HDHALI JONSON</h5>
-                    <h6>chaklds</h6>
+                    <h6>CUSTOMER</h6>
                     <p class="carousel-descriptioin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                         tenetur suscipit aut aperiam ipsam maiores nihil laudantium? Nam, reprehenderit quia delectus
                         dignissimos perspiciatis facere, accusantium tempore voluptas sit rem quo?</p>
@@ -111,6 +130,92 @@
                 <!-- <span class="visually-hidden">Next</span> -->
             </button>
         </div>
+    </section>
+
+
+
+    <!-- contact section -->
+    <section class="contact  mt-5 pt-4 pb-4">
+        <h2>REQUEST <span class="call-back">A CALL BACK</span></h2>
+        <div class="form mt-5">
+            <div class=" left">
+                <input type="text" name="name" placeholder="name" class="input"> <br>
+                <input type="email" name="email" placeholder="email" class="input mt-3"><br>
+                <input type="number" name="number" placeholder="number" class="input mt-3"><br>
+                <textarea name="" id="" cols="30" rows="5" class="mt-3 input" placeholder="message"></textarea> <br>
+                <div class=" btn-div"><button class="sent-btn py-1 px-4">SEND</button></div>
+            </div>
+            <div class=" right ">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=453&amp;height=322&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://connectionsgame.org/">Connections Unlimited</a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 100%;
+                            height: 322px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 100%;
+                            height: 322px;
+                        }
+
+                        .gmap_iframe {
+                            height: 322px !important;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="little-fotter pt-5">
+            <div class="d-flex  ">
+                <div class="footer-title ">
+                    <h5>NEWSLETTER</h5>
+                </div>
+                <div class=" footer-input position-relative">
+                    <input type="text" placeholder="Enter Your Email" class="f-input">
+                    <button class="sub-btn position-absolute bottom-1 end-0">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex footer-description-main-div mx-auto">
+            <div class="footer-description-div">
+                <div class=" imgg ">
+                    <img src="./image/nav.png" class="nav-img" alt="">
+                    <h6 class="mb-3">BRIGHTON</h6>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint ex dignissimos architec error
+                    corporis dolores sapiente minima excepturi?</p>
+            </div>
+            <div class="footer-description-div">
+                <h6 class="mb-3">CONTACTS</h6>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias iure sapiente magni neque
+                    repellat quas blanditiisrepellat cumque cons?</P>
+            </div>
+            <div class="footer-description-div">
+                <h6 class="mb-3">INFORMATIOIN</h6>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cum sit est placeat vitae? Abtemporibus necessitatibus vesapiente quam! Tenettium!</P>
+            </div>
+            <div class="footer-description-div">
+                <h6 class="mb-3">MY ACCOUNT</h6>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis soluta ducimus m cum
+                    accusamus pariatur eligendi labmi.</P>
+            </div>
+        </div>
+    </footer>
+
+    <section class="last-sectioin ">
+        <p>&copy 2019 All Rights Reseved By Free Html Templates</p>
     </section>
 
 
